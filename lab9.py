@@ -6,9 +6,9 @@
 # Purpose: Verify that a user entered password meets specified requirements
 # Resources: powerpoints and youtube
 
-SPECIALS = {'#', '!','$','_'}
+SPECIALS = {'#', '!','$','_'} # it gives it a task .
 
-def is_valid_password(password: str)->bool:
+def is_valid_password(password: str)->bool: #loops ?
     if len(password) <9:
         return False
     has_upper = any(ch.isupper() for ch in password)
@@ -28,3 +28,4 @@ def main()-> None:
 
 if __name__ == "__main__":
     main()
+
